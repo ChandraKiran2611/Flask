@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign in </title>
+	<style>
+	
+	h2{
+		font-family: monaco;
+	}
+
+
+	.box{
+		top: 50%;
+		left: 50%;
+		overflow: hidden;
+		padding: 20px 20px 20px 20px;
+		width: 500px;
+		height: 400px;
+		margin-top: 10%;
+		margin-left: 30%;
+		margin-right: 30%;
+		display: flex;
+		align-items:center ;
+		border : 1px solid blue;
+	}
+
+	input[type = text],input[type = password]{
+
+		width: 400px;
+		border : 1px solid #99d98c;
+		height: 30px;
+		background: none;
+		text-align: center;
+
+	}
+	input[type = submit]{
+		width: 80px;
+		height: 45px;
+		border: 1px solid #80ed99;
+		color: white;
+		background : linear-gradient(#0d324d,#7f5a83) ; 
+		border-radius: 4px;
+		margin-right: 20px;
+		margin-left: 50%;
+		margin-top: 10%;
+
+	}
+	input[type = submit]:hover{
+		color: white;
+		background : linear-gradient(#37d5d6,#36096d) ; 
+		border-radius: 20px;
+		transition: .7s;
+		
+
+	}
+
+	a{
+		margin-top: 70%;
+		margin-left: -100%;
+		text-decoration: none;
+		border: 1px solid none;
+		color: dodgerblue;
+		transition: 0.5s;
+		font-family: monaco;
+
+
+
+	}
+	a:hover{
+		text-decoration: underline;
+		
+
+	}
+	.signup{
+		margin-left: 10%;
+		height: 40px;
+		width: 60px;
+		border:1px solid dodgerblue;
+		padding: 10px 10px 10px 10px;
+	}
+	
+	</style>
+</head>
+<body>
+	<body><h1>sign in</h1>
+	
+	<div class = 'box'>
+		
+		<form action="/" method='post'>
+			<h2>Full name</h2>
+			<input type="text" name="username" required="#">
+			<h2>Password</h2>
+			<input type="password" name="pass" required="#">
+			<input type="submit">
+		</form>
+
+			<a href="/npass">Forgot Password ?</a>
+	</div>
+
+	<p>{{message}}</p>
+	<a href="/signup" class="signup">click here to sign up</a>
+
+
+</body>
+</html>

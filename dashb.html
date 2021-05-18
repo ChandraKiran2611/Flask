@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<style type="text/css">
+		h1{
+			font-family: geneva;
+			color: ;
+
+		}
+		p{
+			font-family: monaco;
+			color: #437653;
+		}
+		.block form{
+
+			padding: 20px 20px 20px 20px;
+			border: 1px solid #990;
+			width: 150px;
+
+		}
+		input[type = text]{
+
+			height: 30px;
+
+		}
+		ul li {
+			display: inline;
+			overflow: hidden;
+			padding: 10px;
+			text-decoration: none;
+			color: #ffffff;
+			text-decoration: none;
+
+			
+		}
+
+		.nav{
+			border: 1px solid black;
+			width: 100%;
+			height: 30px;
+			padding: 10px 10px 20px 10px;
+			padding-top: -5px;
+			margin-top: -0.5%;
+			margin-left: -0.5%;
+		    color: #ffffff;
+			background: linear-gradient(#000000,#2d3436);
+
+		}
+		
+		.oper a{
+			margin-top: 20%;
+			text-decoration: none;
+			font-family: geneva;
+			padding: 8px 8px 8px 8px;
+			color: #1a5b92;
+			transition: 0.5s;
+		}
+		.oper a:hover{
+			color: #ffffff;
+			background: #1d4e89;
+		}
+		ul li a{
+			color: #ffffff;
+			text-decoration: none;
+			transition: 0.5s;
+
+		}
+		ul li a:hover{
+			padding: 10px 10px 10px 10px;
+			background: #ffffff;
+			color: #000000;
+			transition: 0.5s;
+		}
+		
+	</style>
+</head>
+<body><div class="nav">
+	<UL>
+		<LI><a href="/Terms">Terms</a></LI>
+		<LI><a href="/About">About us</a></LI>
+		<LI><a href="/Privacy">Privacy</a></LI>
+	</UL></div>
+	<center><h1>TO-DO List</h1>
+	<h2>Welcome Mr/Mrs {{username}} </h2>
+	<P>{{message}}</P>
+	<a href="/dash">Refresh</a>
+	<div>
+		<table border="1px"  style="overflow: none; width: 300px;height: 200px">
+			
+				<th>
+					List 1
+				</th>
+			
+			<tr>
+				<th>S_no</th>
+				<th>Tasks</th>
+			</tr>
+			<tr>
+				<td>{{data1}}</td>
+				<td>{{data2}}</td>
+				
+			</tr>
+		
+</table>	</div>
+<br><br><br><div class="oper">
+<a href="/add_todo">Add Task</a>&nbsp&nbsp
+<a href="/del_todo">Delete Task</a>
+<br>
+<br><br>
+<a href="/del_list">Delete list</a></div><br>
+<div class="block">
+{% block add %}
+
+
+{% endblock add %}
+</div></center>
+
+</body>
+</html>

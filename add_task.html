@@ -1,0 +1,16 @@
+{% extends 'dashb.html' %}
+{% block add %}
+
+	<form action="/add_todo" method="post">
+		<h3>S_no</h3>
+		<input type="text" name="s_no" style="width: 20px;">
+		<h3>New Task</h3>
+		<input type="text" name="task">
+		<br>
+		<input type="submit" name="">
+
+	</form>
+
+
+
+{% endblock add %}

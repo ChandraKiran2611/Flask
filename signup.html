@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up</title>
+		<style>
+	
+	h2{
+		font-family: monaco;
+	}
+
+
+	.box{
+		top: 50%;
+		left: 50%;
+		overflow: hidden;
+		padding: 20px 20px 20px 20px;
+		width: 500px;
+		height: 400px;
+		margin-top: 10%;
+		margin-left: 30%;
+		margin-right: 30%;
+		display: flex;
+		align-items:center ;
+		border : 1px solid blue;
+	}
+
+	input[type = text],input[type = password]{
+
+		width: 400px;
+		border : 1px solid #99d98c;
+		height: 30px;
+		background: none;
+		text-align: center;
+
+	}
+	input[type = submit]{
+		width: 80px;
+		height: 30px;
+		border: 1px solid #80ed99;
+		border-radius: 4px;
+		margin-right: 20px;
+		margin-left: 50%;
+		margin-top: 10%;
+
+	}
+	
+	</style>
+<body><h1>sign up</h1>
+	
+	<div class = 'box'>
+		
+		<form action='/signup' method='post'>
+			<h2>Full name</h2>
+			<input type="text" name="username" required="#">
+			<h2>Password</h2>
+			<input type="password" name="pass" required="#">
+			<input type="submit">
+
+		</form>
+
+		
+	</div>
+	
+<p>{{message}}</p>
+</body>
+</html>
